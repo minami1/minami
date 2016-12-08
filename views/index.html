@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="./public/css/bootstrap.css">
+		
+		<link rel="stylesheet" href="./public/css/index.css">
+</head>
+<body>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand"><img src="./public/img/index-images/logo-2.png" style="width:116px;margin:-20px 50px;"></a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#jk">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="jk">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a style="color:red" href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Pages</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#"> </a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!--
+		轮播图：
+		1：添加一个div，并且添加其类名carousel slide和id属性；
+		2：设计一个计数器（默认圆点）：可以用ul实现。添加类名carousel-indicators给每个li添加data-target="#轮播图id"和data-slide-to="0"来对应图片，从0开始；
+		3：设计一个轮播图播放器
+			添加一个类名为carousel-inner的div容器
+			在div里面放置要轮播的图片，每一张图片都放在一个类名为item的div里面，宽度看需求设置。
+		4：默认显示项，给当前item和对应的原点都添加类名active；
+		5：添加控制器，上一张、下一张
+			添加两个类名为carousel-control的a链接，并分别为其添加类名left和right； 在a标签里面放左右箭头，可以用bootstrap里面的字体图标，或直接用字符  在a标签上添加属性，让其点击可以切换图片：data-slide=“prev/next"
+										设置href="#轮播图的id"
+		6:自动轮播控制
+			给carousel添加属性
+				data-ride="carousel" -控制自动轮播
+				data-interval="毫秒数" -控制每次图片切换后的停	留时间（如果设置成false,则不会播放到下一张）
+				data-wrap ="true/false" -默认是true,是否循环轮播
+		7：js控制轮播
+			如果carousel没有设置data-ride="carousel"属性，可以通过js调用自动轮播: $(".carousel").carousel(options);
+			停止自动轮播：$(".carousel").carousel("pause");
+
+			-->
+			<div class="carousel slide" id="lbt" style="background:url(./public/img/index-images/111.jpg);height:1000px;width:100%;background-size:100% 100%">
+				<ul class="carousel-indicators">
+					<li data-target="#lbt" data-slide-to="0" class="active"></li>
+					<li data-target="#lbt" data-slide-to="1"></li>
+					<li data-target="#lbt" data-slide-to="2"></li>
+				</ul>
+				<div style="position:absolute;bottom:10%;left:50%;margin-left:-350px;">
+					<div class="carousel-inner" style="overflow:hidden;min-width:724px;">
+						<div class="item active">
+							<span id="sp">
+								<div>
+									<img class="img-circle" src="./public/img/index-images/abt-1.jpg" style="height:200px;width:200px;">
+									<p style="font-size:30px;color:white">ALIQUAM BIBENDUM</p>
+									<button class="btn btn-danger">Read More</button>
+								</div>
+								<div>
+									<img class="img-circle" src="./public/img/index-images/abt-2.jpg" style="height:200px;width:200px;">	
+									<p style="font-size:30px;color:white">QUISQUE PHARELS</p>
+									<button class="btn btn-danger">Read More</button>
+								</div>
+							</span>
+						</div>
+						<div class="item">
+							<span id="sp">
+								<div>
+									<img class="img-circle" src="./public/img/index-images/abt-3.jpg" style="height:200px;width:200px;">
+									<p style="font-size:30px;color:white">ALIQUAM BIBENDUM</p>
+									<button class="btn btn-danger">Read More</button>
+								</div>
+								<div>
+									<img class="img-circle" src="./public/img/index-images/blog-1.jpg" style="height:200px;width:200px;">	
+									<p style="font-size:30px;color:white">QUISQUE PHARELS</p>
+									<button class="btn btn-danger">Read More</button>
+								</div>
+							</span>
+						</div>
+						<div class="item">
+							<span id="sp">
+								<div>
+									<img class="img-circle" src="./public/img/index-images/blog-2.jpg" style="height:200px;width:200px;">
+									<p style="font-size:30px;color:white">ALIQUAM BIBENDUM</p>
+									<button class="btn btn-danger">Read More</button>
+								</div>
+								<div>
+									<img class="img-circle" src="./public/img/index-images/blog-3.jpg" style="height:200px;width:200px;">	
+									<p style="font-size:30px;color:white">QUISQUE PHARELS</p>
+									<button class="btn btn-danger">Read More</button>
+								</div>
+							</span>
+						</div>
+						</div>
+					</div>
+				</div>
+				<a href="#lbt" class="carousel-control left" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				<a href="#lbt" class="carousel-control right" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		<div class="container">
+		<div style="text-align:center">
+			<h1 style="font-weight:bold"><b>WELCOME TO OUR SITE</b></h1>
+			<p>Maecenas ornare lobortis mi id dapibus. Sed magna leo, malesuada in luctus ut, convallis nec sapien. Nulla rhoncus, nunc sollicitudin </p>sodales elementum, augue nunc congue tellus, a varius urna odio vitae mauris. Aenean ultricies porttitor dui quis laoreet.
+		</div>
+			
+			<div class="row">
+				<div class="col-md-6"><h3 style="color:red">Aenean ultricies porttitor</h3>
+				<p>
+				Integer tincidunt ligula id lacinia placerat. Etiam rutrum fermentum tortor. Nunc 
+				tempor dui nec tincidunt eleifend. Phasellus lacinia gravida mollis. Curabitur laoreet ligula tempus, elementum dui quis, malesuada velit. Nullam cursus a magna vitae vestibulum.
+				</p>
+				<div class="row">		
+							<div class="col-md-6">
+								<img class="img0" src="./public/img/index-images/w-6.jpg" >
+							</div>	
+								
+							<div class="col-md-6">
+								<img src="./public/img/index-images/w-4.jpg" 
+								class="img1" height="195px;" >
+								<img src="./public/img/index-images/w-5.jpg" class="img2" height="195px;" style="margin-top:10px">
+							</div>
+				</div>
+						
+					
+					
+				</div>
+				<div class="col-md-6"><h3 style="color:red">Nullam mattis nibh dolor</h3>
+				<p>
+				Integer tincidunt ligula id lacinia placerat. Etiam rutrum fermentum tortor. Nunc tempor dui nec tincidunt eleifend. Phasellus lacinia gravida mollis. Curabitur laoreet ligula tempus, elementum dui quis, malesuada velit. Nullam cursus a magna vitae vestibulum.
+				</p>
+					<img src="./public/img/index-images/w-2.jpg" alt="">
+				</div>
+			</div>
+			<div style="text-align:center">
+				<h1 style="font-weight:bold"><b>OUR BEST OFFERS</b></h1>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<img src="./public/img/index-images/o-1.jpg">
+					<span>$29</span>
+					<h3 style="color:#B76771;text-align:center">Quisque sed neque</h3>
+					<p style="color:#C6C6C6;text-align:center">
+						Maecenas interdum augue eget elit interdum, vitae elementum diam molestie. Nulla facilisi.
+						Read More
+					</p>
+					<button class="btn btn-danger">Read More</button>
+				</div>
+				<div class="col-md-3">
+					<img src="./public/img/index-images/o-2.jpg">
+					<span>$70</span>
+					<h3 style="color:#B76771;text-align:center">Donec mattis nunc</h3>
+					<p style="color:#C6C6C6;text-align:center">
+						Maecenas interdum augue eget elit interdum, vitae elementum diam molestie. Nulla facilisi.
+						Read More
+					</p>
+					<button class="btn btn-danger">Read More</button>
+				</div>
+				<div class="col-md-3">
+					<img src="./public/img/index-images/o-3.jpg">
+					<span>$46</span>
+					<h3 style="color:#B76771;text-align:center">Maecenas non risus</h3>
+					<p style="color:#C6C6C6;text-align:center">
+						Maecenas interdum augue eget elit interdum, vitae elementum diam molestie. Nulla facilisi.
+						Read More
+					</p>
+					<button class="btn btn-danger">Read More</button>
+				</div>
+				<div class="col-md-3">
+					<img src="./public/img/index-images/o-5.jpg">
+					<span>$80</span>
+					<h3 style="color:#B76771;text-align:center">Nullam vitae nisl</h3>
+					<p style="color:#C6C6C6;text-align:center">
+						Maecenas interdum augue eget elit interdum, vitae elementum diam molestie. Nulla facilisi.
+						Read More
+					</p>
+					<button class="btn btn-danger">Read More</button>
+				</div>
+			</div>
+		</div>
+		<div style="background:url(./public/img/index-images/nature.jpg) center no-repeat;background-size:100% 100%;width:100%;height:400px;margin-top:20px;position:relative">
+			<div style="border-radius:50%;width:280px;height:280px;padding:50px;background:rgba(188,15,23,0.5);position:absolute;bottom:5%;right:5%">
+				<h2 style="color:white;font-size:22px;text-align:center">Maecenas ornare lobortis</h2>
+				<p style="color:#D2C2B8;font-size:12px;text-align:center">
+					Phasellus tempor erat id erat gravida pulvinar.
+					Aenean est felis, ullamcorper et volutpat sed,
+					cursus at enim. Vestibulum vel finibus neque. In sed magna tellus.
+				</p>	
+			</div>
+		</div>
+		<div class="container" style="margin-top:20px;">
+			<div class="row">
+				<div class="col-sm-4">
+				<span class="glyphicon glyphicon-home" style="position:relative;left:50%;margin-left:-40px"></span>
+				<h3 style="color:red;text-align:center">
+					Vestibulum vel finibus
+				</h3>
+				<p style="color:#C9C9C9;text-align:center">
+					Pellentesque sed sem bibendum, rutrum ipsum vitae, facilisis turpis. Mauris vitae metus gravida, hendrerit erat ac, facilisis ligula.
+				</p>
+				</div>
+
+				<div class="col-sm-4">
+				<span class="glyphicon glyphicon-pencil" style="position:relative;left:50%;margin-left:-40px"></span>
+				<h3 style="color:red;text-align:center">
+					Quisque non ligula
+				</h3>
+				<p style="color:#C9C9C9;text-align:center">
+					Pellentesque sed sem bibendum, rutrum ipsum vitae, facilisis turpis. Mauris vitae metus gravida, hendrerit erat ac, facilisis ligula.
+				</p>
+				</div>
+
+				<div class="col-sm-4">
+				<span class="glyphicon glyphicon-user" style="position:relative;left:50%;margin-left:-40px"></span>
+				<h3 style="color:red;text-align:center">
+					Lorem ipsum dolor
+				</h3>
+				<p style="color:#C9C9C9;text-align:center">
+					Pellentesque sed sem bibendum, rutrum ipsum vitae, facilisis turpis. Mauris vitae metus gravida, hendrerit erat ac, facilisis ligula.
+				</p>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top:20px">
+			<div class="navbar navbar-inverse boom">
+				<div style="text-align:center">
+					<img src="./public/img/index-images/footer.png" style="height: 150px">
+				</div>
+			</div>
+			<div class="navbar-fixed-bottom">
+				<div style="text-align:right;">
+						<img class="top" src="./public/img/index-images/top-arrow.png" style="cursor:pointer">
+				</div>
+			</div>
+		</div>
+		<script src="./public/js/jquery-1.12.2.min.js"></script>
+		<script src="./public/js/bootstrap.min.js"></script>
+</body>
+</html>
