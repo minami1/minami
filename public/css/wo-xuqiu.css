@@ -1,0 +1,56 @@
+@import './head.css';
+.news-contain {
+  margin: auto;
+  padding: 0px 10px;
+  margin: 30px 0px;
+}
+.news-contain .news-contain-content {
+  margin: 15px;
+  background: #fff;
+  height: 170px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #888;
+}
+.news-contain .news-contain-content .news-content-top {
+  display: flex;
+  line-height: 45px;
+  height: 45px;
+  border-bottom: 1px dotted #e4e4e4;
+}
+.news-contain .news-contain-content .news-content-top .news-content-top-left {
+  flex: 1;
+}
+.news-contain .news-contain-content .news-content-top .news-content-top-left div {
+  float: left;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.news-contain .news-contain-content .news-content-top .news-content-top-right {
+  position: relative;
+}
+.news-contain .news-contain-content .news-content-top .news-content-top-right .news-last-prayer {
+  color: #b5b5b5;
+  font-size: 12px;
+  position: absolute;
+  right: 15px;
+  margin-bottom: -5px;
+}
+.news-contain .news-contain-content .news-content-bottom .news-bottom-prayer {
+  font-size: 14px;
+  color: #494949;
+  margin: 10px 15px;
+  height: 60px;
+}
+.news-contain .news-contain-content .news-content-bottom .news-bottom-last {
+  text-align: center;
+  position: relative;
+}
+.news-contain .news-contain-content .news-content-bottom .news-bottom-last .news-last-btn {
+  width: 115px;
+  height: 30px;
+  background: #efeff4;
+  font-size: 16px;
+  color: #969698;
+  border: none;
+  border-radius: 5px;
+}

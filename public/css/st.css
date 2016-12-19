@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #807e7e;
+  font-family: Microsoft YaHei;
+  background-color: #f5eeea;
+  transition: all 1s;
+}
+a {
+  text-decoration: none;
+}
+.contain .box {
+  margin: auto;
+  height: 500px;
+  background: url("../img/house/geren/loading_01.png") center no-repeat;
+  background-size: 100%;
+}
+.contain .bottom {
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+}
+.contain-dl {
+  display: none;
+  height: 35px;
+  text-align: center;
+}
+.contain-dl .top {
+  color: #ed6e2a;
+  text-align: center;
+  font-size: 20px;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  background: #fff;
+}
+.contain-dl .top .dl-top-back {
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  left: 10px;
+  background: url("../img/house/geren/nav_back_icon@2x.png") left center no-repeat;
+  background-size: 10%;
+}
+.zhanghao {
+  height: 80px;
+  background: #fff;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+.zhanghao .zhanghao-center {
+  height: 1px;
+  background: #cdcdcd;
+  width: 95%;
+  margin: auto;
+}
+.zhanghao .zhanghao-box {
+  height: 40px;
+  vertical-align: middle;
+}
+.zhanghao .zhanghao-box .zhanghao-left {
+  height: 40px;
+  float: left;
+  line-height: 40px;
+}
+.zhanghao .zhanghao-box .zhanghao-left .zhanghao-img-2 {
+  height: 40px;
+  width: 40px;
+  float: left;
+  vertical-align: text-bottom;
+  background: url("../img/house/geren/content_password_icon@2x.png") no-repeat center;
+  background-size: 45%;
+}
+.zhanghao .zhanghao-box .zhanghao-left .zhanghao-img {
+  height: 40px;
+  width: 40px;
+  float: left;
+  background: url("../img/house/geren/content_ID_icon@2x.png") no-repeat center;
+  background-size: 50%;
+  vertical-align: text-bottom;
+}
+.zhanghao .zhanghao-box .zhanghao-left .zhanghao-txt {
+  float: left;
+  color: #000;
+}
+.zhanghao .zhanghao-box .zhanghao-right {
+  display: flex;
+  float: left;
+  line-height: 40px;
+  flex: 1;
+}
+.zhanghao .zhanghao-box .zhanghao-right input {
+  margin-top: 14px;
+  border: none;
+  outline: 0;
+}
+.bottom {
+  margin: 45px auto;
+  height: 100px;
+}
+.bottom .bottom-btn {
+  width: 95%;
+  height: 45px;
+  background: #c7c7c7;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.bottom .bottom-btn a {
+  color: #fff;
+}
+.bottom-bottom {
+  height: 50px;
+  margin-top: 20px;
+}
+.bottom-left {
+  float: left;
+  text-indent: 10px;
+  font-size: 14px;
+}
+.bottom-left .bottom-zc {
+  color: #fd9c39;
+  font-size: 16px;
+}
+.bottom-right {
+  float: right;
+  padding-right: 10px;
+  color: #777778;
+}
+.both {
+  clear: both;
+}

@@ -1,0 +1,101 @@
+@import './head.css'
+.contain-top
+	border-top 1px solid #EBEBEE
+	overflow hidden
+	background white
+	height 200px
+	padding 20px
+	.contain-top-content
+		text-align center
+		height 160px
+		.contain-content-img
+			width 128px
+			height 128px
+			display inline-block
+			background url(../img/house/i/login_user-head@2x.png) center no-repeat
+		.contain-content-qm
+			font-size 14px
+			color #757575
+			margin 5px
+		.contain-content-set
+			width 95px
+			height 30px
+			margin 5px auto
+			border 1px solid #F79D6C
+			font-size 12px
+			line-height 30px
+			color #F79D6C
+			border-radius 5px
+.contain-bottom
+	margin-top 20px
+	height 250px
+	background white
+	.contain-bottom-ul
+		margin-left 10px
+		padding 0
+		.contain-bottom-ul-li
+			display flex
+			height 35px
+			line-height 35px
+			border-bottom 1px solid #E5E5E5
+			span:first-child
+				flex 2
+				color #6B6B6B
+				font-size 14px
+			span:last-child
+				flex 3
+				font-size 14px
+				.contain-bottom-ul-li-img
+					background url(../img/house/i/login_user-head@2x.png) center no-repeat 
+					width 30px
+					height 30px
+					margin-top 2px
+					background-size 100%
+				.contain-bottom-ul-li-prayer
+					border none
+					outline none
+	.contain-bottom-last
+		margin-left 10px
+		margin-top 10px
+		padding 0
+		display flex
+		.contain-bottom-last-ul-li
+			flex 1
+			.contain-bottom-last-ul-li-img
+				width 95%
+				height 60px
+				border-radius 5px
+				display block
+				background url(../img/house/i/weixin8.jpg) center no-repeat
+				background-size 100%
+			.contain-bottom-last-ul-li-prayer
+				text-align center
+				height 25px
+				line-height 25px
+				color #878787
+				width 100%
+				display inline-block
+				font-size 14px
+.absolute
+	position absolute
+	background rgba(180,180,180,0.6)
+	display none
+	width 100%
+	height 100%
+	z-index 2
+	.absolute-bottom
+		position absolute
+		bottom 0
+		width 100%
+		height 130px
+		background white
+		li
+			width 95%
+			margin auto
+			height 40px
+			line-height 40px
+			border-bottom 1px solid #EAEAEA
+			text-align center
+			&:last-child
+				border-bottom none
+				color #EE7638

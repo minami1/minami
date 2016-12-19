@@ -1,0 +1,38 @@
+body {
+  font-family: Microsoft YaHei;
+  background-color: #efeff4;
+}
+.contain-dl {
+  text-align: center;
+}
+.contain-dl .top {
+  color: #ed6e2a;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  width: 100%;
+}
+.contain-dl .top:before {
+  content: '';
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  background: url("../img/house/geren/nav_back_icon@2x.png") left 10px top 3px no-repeat;
+  background-size: 10%;
+}
+.zhanghao {
+  height: 200px;
+  background: #fff;
+}
+.zhanghao-box {
+  height: 40px;
+  vertical-align: middle;
+}
+.zhanghao-box .zhanghao-left .zhanghao-img {
+  height: 40px;
+  width: 40px;
+  float: left;
+  background: url("../img/house/geren/content_ID_icon@2x.png") no-repeat;
+  background-size: 50%;
+}

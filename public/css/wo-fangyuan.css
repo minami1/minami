@@ -1,0 +1,113 @@
+@import './head.css';
+.i-contain {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  height: 130px;
+}
+.i-contain .i-contain-left {
+  width: 128px;
+  height: 90px;
+  background: url("../img/house/i/content_img_list@2x.png") center no-repeat;
+  background-size: 100%;
+}
+.i-contain .i-contain-right {
+  flex: 1;
+  margin-left: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.i-contain .i-contain-right .h3 {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  display: inline-block;
+}
+.i-contain .i-contain-right .h3 .h3-right {
+  display: inline-block;
+  color: #939393;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+.i-contain .i-contain-right .h3 .right {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14px;
+  height: 13px;
+  background: url("../img/house/i/collect_icon_nor@2x.png") center no-repeat;
+  background-size: 100%;
+}
+.i-contain .i-contain-right .h3 .addright {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14px;
+  height: 13px;
+  background: url("../img/house/i/collect_icon_press@2x.png") center no-repeat;
+  background-size: 100%;
+}
+.i-contain .i-contain-right .h3-two {
+  position: relative;
+}
+.i-contain .i-contain-right .h3-two:after {
+  content: '08/07';
+  display: inline-block;
+  color: #939393;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  text-align: right;
+}
+.i-contain .i-contain-right .i-right-prayer {
+  color: #787878;
+  margin-top: 5px;
+}
+.i-contain .i-contain-right .i-right-box {
+  color: #ef7f4a;
+  width: 75px;
+  height: 25px;
+  border: 1px solid #ef7f4a;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.i-contain .i-contain-right .i-right-bottom {
+  margin-top: 5px;
+  color: #727272;
+  font-size: 14px;
+}
+.i-contain .i-contain-right .i-right-bottom .i-right-bottom-left float-left,
+.i-contain .i-contain-right .i-right-bottom .i-right-bottom-left .i-right-bottom-left-left {
+  color: #eb5d1a;
+  font-size: 18px;
+}
+.i-contain .i-contain-right .i-right-bottom .i-right-bottom-right {
+  float: right;
+  font-size: 14px;
+  margin-top: 3px;
+}
+.i-contain .i-contain-right .i-right-remove {
+  width: 90px;
+  height: 100%;
+  position: absolute;
+  right: -95px;
+  top: 0;
+  transition: all 1s;
+  background: #efeff4;
+  text-align: center;
+  line-height: 155px;
+  font-size: 18px;
+  color: #eb7334;
+}

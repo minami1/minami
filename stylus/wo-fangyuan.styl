@@ -1,0 +1,99 @@
+@import './head.css'
+.i-contain
+	display flex
+	padding 10px
+	margin-top 10px
+	background white
+	height 130px
+	.i-contain-left
+		width 128px
+		height 90px
+		background url(../img/house/i/content_img_list@2x.png) center no-repeat
+		background-size 100% 
+	.i-contain-right
+		flex 1
+		margin-left 15px
+		position relative
+		overflow hidden
+		.h3
+			position relative
+			font-size 16px
+			font-weight bold
+			width 100%
+			display inline-block
+			.h3-right
+				display inline-block
+				color #939393
+				font-size 12px
+				position absolute
+				bottom 0
+				right 0
+				text-align right
+			.right
+				display inline-block
+				position absolute
+				bottom 0
+				right 0
+				width 14px
+				height 13px
+				background url(../img/house/i/collect_icon_nor@2x.png) center no-repeat
+				background-size 100%
+			.addright
+				display inline-block
+				position absolute
+				bottom 0
+				right 0
+				width 14px
+				height 13px
+				background url(../img/house/i/collect_icon_press@2x.png) center no-repeat
+				background-size 100%
+		.h3-two
+			position relative
+			&:after
+				content '08/07'
+				display inline-block
+				color #939393
+				font-size 12px
+				position absolute
+				right 10px
+				bottom 0
+				text-align right
+		.i-right-prayer
+			color #787878
+			margin-top 5px
+		.i-right-box
+			color #EF7F4A
+			width 75px
+			height 25px
+			border 1px solid #EF7F4A
+			text-align center
+			border-radius 5px
+			font-size 14px
+			line-height 25px
+			font-weight 500
+			margin-top 5px
+		.i-right-bottom
+			margin-top 5px
+			color #727272
+			font-size 14px
+			.i-right-bottom-left
+				float-left
+				.i-right-bottom-left-left
+					color #EB5D1A
+					font-size 18px
+			.i-right-bottom-right
+				float right
+				font-size 14px
+				margin-top 3px
+		.i-right-remove
+			width 90px
+			height 100%
+			position absolute
+			right -95px
+			top 0
+			transition all 1s
+			background #EFEFF4
+			text-align center
+			line-height 155px
+			font-size 18px
+			color #EB7334

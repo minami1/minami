@@ -1,0 +1,146 @@
+@import './head.css';
+.zc {
+  height: 240px;
+  background: #fff;
+  margin-top: 20px;
+  line-height: 40px;
+}
+.zc .one {
+  height: 45px;
+  width: 95%;
+  margin: auto;
+  border-bottom: 1px solid #ebebeb;
+}
+.zc .one .zh-left {
+  float: left;
+}
+.zc .one .zh-left .zh-img {
+  width: 30px;
+  height: 40px;
+  float: left;
+  vertical-align: text-bottom;
+  background: url("../img/house/geren/content_ID_icon@2x.png") center left 0px no-repeat;
+  background-size: 75% 50%;
+}
+.zc .one .zh-left .zh-text {
+  float: left;
+  color: #000;
+}
+.zc .one .zh-right {
+  display: flex;
+  float: left;
+  line-height: 40px;
+  flex: 1;
+}
+.zc .one .zh-right input {
+  margin-top: 14px;
+  border: none;
+  outline: 0;
+}
+.zc .two {
+  position: relative;
+}
+.zc .two .two-img {
+  width: 30px;
+  height: 40px;
+  float: left;
+  vertical-align: text-bottom;
+  background: url("../img/house/geren/content_verify_icon@2x.png") center left 2px no-repeat;
+  background-size: 50% 55%;
+}
+.zc .two .zh-right-yz {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -15px;
+  width: 85px;
+  height: 30px;
+  color: #fbe1da;
+  font-size: 12px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #ea5404;
+}
+.zc .last {
+  border-bottom: none;
+  margin-top: 5px;
+  position: relative;
+}
+.zc .last .last-img {
+  width: 30px;
+  height: 40px;
+  float: left;
+  vertical-align: text-bottom;
+  background: url("../img/house/geren/content_position_icon@2x.png") center left 0px no-repeat;
+  background-size: 70% 50%;
+}
+.zc .last .xy {
+  width: 40px;
+  font-size: 30px;
+  text-align: center;
+  height: 26px;
+  color: #818181;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  margin: 5px;
+  margin-top: 10px;
+  transform: rotate(180deg);
+}
+.zc .last .xy .box {
+  display: none;
+  width: 65px;
+  height: 85px;
+  background: #a3a3a3;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fcfbfb;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+.zc .last .xy .box ul {
+  list-style: none;
+}
+.zc .last .xy .box ul li {
+  height: 26px;
+  line-height: 26px;
+  border-bottom: 1px solid #b5b5b5;
+}
+.zc .last .xy .box ul li:last-child {
+  border: none;
+}
+.three-img {
+  width: 30px;
+  height: 40px;
+  float: left;
+  vertical-align: text-bottom;
+  background: url("../img/house/geren/content_password_icon@2x.png") center left 1px no-repeat;
+  background-size: 60% 55%;
+}
+.contain-end {
+  width: 95%;
+  height: 70px;
+  margin: 45px auto;
+  text-align: center;
+}
+.contain-end .end-first {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+  background: #c7c7c7;
+  color: #f2f2f2;
+}
+.contain-end .end-last {
+  font-size: 16px;
+  color: #818182;
+}
+.contain-end .end-last .a-font {
+  color: #eb875e;
+  text-decoration: underline;
+}
