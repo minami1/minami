@@ -1,0 +1,201 @@
+@import './head.css';
+.details-head {
+  margin: 10px;
+  color: #c3c3c4;
+  font-size: 14px;
+}
+.details-data {
+  background: #fff;
+  height: 45px;
+  padding: 10px;
+  display: flex;
+}
+.details-data .details-data-left {
+  flex: 1;
+  height: 45px;
+}
+.details-data .details-data-left .details-data-left-img {
+  width: 40px;
+  height: 45px;
+  border-radius: 50%;
+  background: url("../img/house/i/content_img_user@2x.png") center no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  float: left;
+}
+.details-data .details-data-left .details-data-left-text {
+  display: inline-block;
+  height: 40px;
+  float: left;
+  margin: 5px;
+}
+.details-data .details-data-left .details-data-left-text .details-data-text-top {
+  color: #3e3e3e;
+  font-size: 16px;
+  line-height: 20px;
+  height: 20px;
+}
+.details-data .details-data-left .details-data-left-text .details-data-text-bottom {
+  color: #727272;
+  font-size: 12px;
+}
+.details-data .details-data-right {
+  width: 60px;
+  height: 30px;
+  background: url("../img/house/i/content_icon_call@2x.png") center no-repeat;
+  background-size: 30%;
+  margin-top: 5px;
+  border-left: 1px solid #f0f0f0;
+}
+.details-info {
+  background: #fff;
+  height: 45px;
+  padding: 10px;
+}
+.details-info .details-info-top {
+  color: #323232;
+  font-size: 16px;
+}
+.details-info .details-info-bottom {
+  display: flex;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+.details-info .details-info-bottom .details-info-left {
+  flex: 1;
+}
+.details-time {
+  background: #fff;
+  height: 25px;
+  padding: 10px;
+  line-height: 25px;
+}
+.details-btn {
+  width: 90%;
+  margin: auto;
+  color: #fff;
+  background: #ea5404;
+  border-radius: 5px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 45px;
+}
+.absolute {
+  position: absolute;
+  background: rgba(180,180,180,0.6);
+  width: 100%;
+  display: none;
+  top: 0;
+  height: 100%;
+  z-index: 2;
+}
+.absolute .absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -132px;
+  margin-top: -55px;
+  border-radius: 10px;
+  width: 275px;
+  height: 110px;
+  background: #fff;
+  text-align: center;
+}
+.absolute .absolute-center .absolute-center-top {
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  border-bottom: 1px solid #ebebee;
+}
+.absolute .absolute-center .absolute-center-bottom {
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+.absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-left {
+  border-radius: 0px 0px 0px 10px;
+  flex: 1;
+  border-right: 1px solid #ebebee;
+  color: #7e7e7e;
+}
+.absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-right {
+  border-radius: 0px 0px 10px 0px;
+  flex: 1;
+  color: #ea5404;
+}
+.absolute .absolute-center .absolute-center-bottom .setTime-ok {
+  border-radius: 0px 0px 10px 10px;
+  flex: 1;
+  color: #ea5404;
+}
+.details-hide {
+  display: none;
+}
+.details-hide .details-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.details-hide .details-ul .details-ul-li {
+  height: 40px;
+  background: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 5px 10px;
+  display: flex;
+}
+.details-hide .details-ul .details-ul-li .details-li-left .details-li-left-bottom* {
+  color: #626262;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+.details-hide .details-ul .details-ul-li .details-li-right {
+  flex: 1;
+  text-align: right;
+  line-height: 40px;
+}
+.details-end {
+  position: fixed;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  font-size: 18px;
+  display: none;
+  border-top: 1px solid #ebebee;
+  background: #fff;
+  color: #ec6a2f;
+  text-align: center;
+}
+.details-end .details-end-ul {
+  display: flex;
+  list-style: none;
+}
+.details-end .details-end-ul .details-end-li {
+  flex: 1;
+  border-right: 1px solid #ebebee;
+}
+.details-end .details-end-ul .details-end-li:last-child {
+  border: none;
+}
+.details-last-hide {
+  display: none;
+}
+.details-last-hide .details-hide-time {
+  margin: 10px;
+  color: #c3c3c4;
+  font-size: 14px;
+}
+.details-last-hide .details-last-time {
+  background: #fff;
+  height: 25px;
+  padding: 10px;
+  line-height: 25px;
+}
+.details-last-hide .details-last-time .details-info-top input {
+  float: right;
+  border: none;
+  outline: none;
+}

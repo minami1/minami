@@ -37,7 +37,7 @@ $('.page-last li').on('touchend',function(){
 	if(oindex == 0){
 		window.location.href="homepage.html"
 	}else if(oindex==1){
-		alert('预约')
+		window.location.href="appointment.html"
 	}else if(oindex==2){
 		alert('添加')
 	}else if(oindex==3){
@@ -91,13 +91,21 @@ $('.contain-content-set').on('touchend',function(){
 	window.location.href="wo-setmeans.html"
 })
 $('.contain-bottom-ul-li .show').on('touchend',function(){
-	$('.absolute').fadeIn(1000)
+	$('.absolute').fadeIn(600)
 })
-$('.absolute-bottom-ul .hidden').on('touchend',function(){
+$('.details-data-right').on('touchend',function(){
+	$('.absolute-center-bottom-right').css('background','white');
+	$('.absolute-center-bottom-left').css({'background':'white','color':'black'});
+	$('.phone-absolute').fadeIn(600)
+})
+$('.absolute-center-bottom-left').on('touchstart',function(){
+	$(this).css({'background':'#363636','color':'white'})
+})
+$('.absolute-bottom-ul .hidden').on('touchstart',function(){
 	$(this).css('background',"#484848")
 })
-$('.absolute-bottom-ul .hidden').on('touchend',function(){
-	$('.absolute').fadeOut(1000)
+$('.absolute-bottom-ul .hidden').on('touchstart',function(){
+	$('.absolute').fadeOut(600)
 	$(this).css('background',"white")
 })
 $('.set-contain-li-right').on('touchend',function(){
@@ -124,16 +132,16 @@ $('.set-contain-ul-li:last').on('touchend',function(){
 })
 $('.set-contain-ul-li').on('touchend',function(){	
 	if($(this).find($('.set-contain-ul-li-left')).text()=='清除缓存'){
-		$('.absolute').fadeIn(1000)
+		$('.absolute').fadeIn(600)
 	}
 })
 // 
 $('.absolute-center-bottom').on('touchend',function(){
-	$('.absolute').fadeOut(1000)
-
+	$('.absolute').fadeOut(400)
 })
 $('.absolute-center-bottom-right').on('touchend',function(){
-		$('.set-contain-li-right-prayer').remove()
+	$(this).css('background','#363636')
+	$('.set-contain-li-right-prayer').remove()
 })
 var paehomewidth = $(window).width();
 var paehomeheight = $(window).height()*0.6;
@@ -183,7 +191,7 @@ $(".homepage-last-top-cantain").on('touchend',function(){
 			},800);
 			$('.homepage-absolute').fadeIn(1000)
 			$('.homepage-last').css('margin-top','0px');
-			$('.homepage-last-top-hidden-one').fadeIn(1000);
+			$('.homepage-last-top-hidden').fadeIn(1000);
 			setTimeout(settime,1000)
 		}else{
 			$('.homepage-cantain').slideDown(700);
@@ -214,3 +222,53 @@ function settime(){
 	$('.homepage-absolute').height(outerHeight-homepage_cantain_height+50);
 	$('.homepage-absolute').width(outerwidth);
 }
+$('.appointment-box-bottom').on('touchend',function(){
+	$(this).text('已接单，待反馈');
+	$(this).css({
+		'width':'90%',
+		'text-align':'right',
+		'background':'white',
+		'color':'#434343'
+	})
+	setTimeout(appointment,700)
+})
+function appointment(){
+	window.location.href = 'appointment-details.html'
+}
+$('.details-btn').on('touchend',function(){
+	$('.details-top-txt').text('订单详情');
+	$('.details-end').css('display','block');
+	$('.details-cantain-box').css('margin-bottom','60px');
+	$(this).css('display','none');
+	$('.details-hide').css('display','block')
+})
+$('.details-end-last').on('touchend',function(){
+	$('.details-end').css('display','none');
+	$('.details-hide').css('display','none');
+	$('.details-btn').css('display','block');
+	$('.details-last-hide').css('display','none');
+})
+$('.details-end-first').on('touchend',function(){
+	$('.time-absolute').fadeIn(400);
+	$('.details-last-hide').css('display','block');
+	$('.details-cantain-box').css('margin-bottom','0px');
+	$('.details-hide').css('display','none');
+})
+$('.details-end-first').on('touchstart',function(){
+	$('.absolute-center-bottom-right').css('background','white');
+	$('.absolute-center-bottom-left').css({'background':'white','color':'black'});
+})
+$('.myDate').blur(function(){
+	$('.setTime-absolute').fadeIn(400);
+	$('.setTime-ok').css('background','white');
+})
+$('.absolute-center-bottom-left').on('touchend',function(){
+	$('.details-top-txt').text('订单详情');
+	$('.details-end').css('display','block');
+	$('.details-cantain-box').css('margin-bottom','60px');
+	$('.details-last-hide').css('display','none');
+	$('.details-btn').css('display','block');
+})
+$('.appointment-remove').on('touchstart',function(){
+	$(this).parent().css('display','none')
+})

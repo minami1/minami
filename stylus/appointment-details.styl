@@ -1,0 +1,169 @@
+@import './head.css'
+.details-head
+	margin 10px
+	color #C3C3C4
+	font-size 14px
+.details-data
+	background white
+	height 45px
+	padding 10px
+	display flex
+	.details-data-left
+		flex 1
+		height 45px
+		.details-data-left-img
+			width 40px
+			height 45px
+			border-radius 50%
+			background url(../img/house/i/content_img_user@2x.png) center no-repeat
+			background-size 100%
+			display inline-block
+			float left
+		.details-data-left-text
+			display inline-block
+			height 40px
+			float left
+			margin 5px
+			.details-data-text-top
+				color #3E3E3E
+				font-size 16px
+				line-height 20px
+				height 20px
+			.details-data-text-bottom
+				color #727272
+				font-size 12px
+	.details-data-right
+		width 60px
+		height 30px
+		background url(../img/house/i/content_icon_call@2x.png) center no-repeat
+		background-size 30%
+		margin-top 5px
+		border-left 1px solid #F0F0F0
+.details-info
+	background white
+	height 45px
+	padding 10px
+	.details-info-top
+		color #323232
+		font-size 16px
+	.details-info-bottom
+			display flex
+			color #7F7F7F
+			font-size 12px
+			.details-info-left
+				flex 1
+.details-time
+	background white
+	height 25px
+	padding 10px
+	line-height 25px
+.details-btn
+	width 90%
+	margin auto
+	color white
+	background #EA5404
+	border-radius 5px
+	text-align center
+	height 45px
+	line-height 45px
+	margin-top 45px
+.absolute
+	position absolute
+	background rgba(180,180,180,0.6)
+	width 100%
+	display none
+	top 0
+	height 100%
+	z-index 2
+	.absolute-center
+		position absolute
+		top 50%
+		left 50%
+		margin-left -132px
+		margin-top -55px
+		border-radius 10px
+		width 275px
+		height 110px
+		background white
+		text-align center
+		.absolute-center-top
+			height 65px
+			line-height 65px
+			font-size 14px
+			border-bottom 1px solid #EBEBEE
+		.absolute-center-bottom
+			border-radius 0px 0px 10px 10px
+			display flex
+			height 45px
+			line-height 45px
+			.absolute-center-bottom-left
+				border-radius 0px 0px 0px 10px
+				flex 1
+				border-right 1px solid #EBEBEE
+				color #7E7E7E
+			.absolute-center-bottom-right
+				border-radius 0px 0px 10px 0px
+				flex 1
+				color #EA5404
+			.setTime-ok
+				border-radius 0px 0px 10px 10px
+				flex 1
+				color #EA5404
+.details-hide
+	display none
+	.details-ul
+		list-style none
+		margin 0
+		padding 0
+		.details-ul-li
+			height 40px
+			background white
+			border-bottom 1px solid #F5F5F5
+			padding 5px 10px
+			display flex
+			.details-li-left
+				.details-li-left-bottom*
+					color #626262
+					width 100%
+					text-align center
+					font-size 12px
+			.details-li-right
+				flex 1
+				text-align right
+				line-height 40px
+.details-end
+	position fixed
+	bottom 0
+	height 45px
+	width 100%
+	line-height 45px
+	font-size 18px
+	display none
+	border-top 1px solid #EBEBEE
+	background white
+	color #EC6A2F
+	text-align center
+	.details-end-ul
+		display flex
+		list-style none
+		.details-end-li
+			flex 1
+			border-right 1px solid #EBEBEE
+			&:last-child
+				border none
+.details-last-hide
+	display none
+	.details-hide-time
+		margin 10px
+		color #C3C3C4
+		font-size 14px
+	.details-last-time
+		background white
+		height 25px
+		padding 10px
+		line-height 25px
+		.details-info-top
+			input 
+				float right
+				border none
+				outline none

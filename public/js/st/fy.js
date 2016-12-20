@@ -16,3 +16,20 @@ for(var i=0;i<dom.length;i++){
 		}
 	})
 }
+var oremove = document.getElementsByClassName('appointment-contain-box');
+for(var i=0;i<oremove.length;i++){
+	oremove[i].addEventListener('touchstart',function(e){
+		var th = e.touches[0];
+		startX = th.clientX;
+	})
+	oremove[i].addEventListener('touchmove',function(e){
+		var th = e.touches[0];
+		moveX = th.clientX;
+		if(startX-moveX>20){
+			$(this).css('margin-left','-65px')
+			console.log(1)
+		}else if(startX-moveX<20){
+			$(this).css('margin-left','0px')
+		}
+	})
+}
