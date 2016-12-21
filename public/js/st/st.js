@@ -39,7 +39,7 @@ $('.page-last li').on('touchend',function(){
 	}else if(oindex==1){
 		window.location.href="appointment.html"
 	}else if(oindex==2){
-		alert('添加')
+		window.location.href="fabu.html"
 	}else if(oindex==3){
 		window.location.href="xinxi-xiaoxi.html"
 	}else if(oindex==4){
@@ -137,7 +137,7 @@ $('.set-contain-ul-li').on('touchend',function(){
 })
 // 
 $('.absolute-center-bottom').on('touchend',function(){
-	$('.absolute').fadeOut(400)
+	$(this).parent().parent().fadeOut(400)
 })
 $('.absolute-center-bottom-right').on('touchend',function(){
 	$(this).css('background','#363636')
@@ -255,6 +255,7 @@ $('.details-end-first').on('touchend',function(){
 	$('.details-hide').css('display','none');
 })
 $('.details-end-first').on('touchstart',function(){
+	$('.details-btn').css('display','none');
 	$('.absolute-center-bottom-right').css('background','white');
 	$('.absolute-center-bottom-left').css({'background':'white','color':'black'});
 })
@@ -271,4 +272,57 @@ $('.absolute-center-bottom-left').on('touchend',function(){
 })
 $('.appointment-remove').on('touchstart',function(){
 	$(this).parent().css('display','none')
+})
+$('.details-end-ok').on('touchend',function(){
+	$('.body-absolute').css('display','block');
+	$('.absolute-center-bottom-right').css('background','white');
+	$('.absolute-center-bottom-left').css({'background':'white','color':'black'});
+})
+// $('.details-end-ok .absolute-center-bottom').on('touchend',function(){
+// 	$('.body-absolute').css('display','none')
+// })
+var bodyheight = $(window).height()
+$('.fabu-homepage').css('height',bodyheight);
+$('.fabu-needs').css('height',bodyheight);
+$('.fabu-housing').css('height',bodyheight);
+
+$('.needs-top-left').on('touchend',function(){
+	$('.needs-absolute').fadeIn(400);
+	$('.absolute-center-bottom-right').css('background','white');
+	$('.absolute-center-bottom-left').css({'background':'white','color':'black'});
+})
+$('.needs-absolute .absolute-center-bottom-right').on('touchend',function(){
+	$('.fabu-homepage').fadeIn(200);
+	$('.fabu-needs').fadeOut(400);
+})
+$('.fabu-absolute .absolute-center-bottom-right').on('touchend',function(){
+	$('.fabu-homepage').fadeIn(200);
+	$('.fabu-needs').fadeOut(400);
+})
+
+$('.fabu-homepage-center-left').on('touchend',function(){
+	$('.fabu-homepage').fadeOut(300);
+	$('.fabu-needs').fadeIn(400);
+})
+$('.needs-top-right').on('touchend',function(){
+	$('.fabu-absolute').fadeIn(200);
+	$('.absolute-center-bottom-right').css('background','white');
+})
+$('.fabu-homepage-bottom').on('touchend',function(){
+	window.history.back()
+})
+$('.housing-news-title-bottom-li').find($('.news-img-two').removeClass('housing-news-title-bottom-li-img-radius'))
+$('.housing-news-title-bottom-li').on('touchend',function(){
+	$('.housing-news-title-bottom-li').find($('.news-img-two')).removeClass('housing-news-title-bottom-li-img-radius')
+	$(this).find($('.news-img-two')).addClass('housing-news-title-bottom-li-img-radius')
+})
+var off = true;
+$('.housing-news-centent-li-right').on('touchend',function(){
+	if(off){
+		$(this).find($('.news-img-two')).addClass('housing-news-title-bottom-li-img-radius');
+		off=false
+	}else{
+		$(this).find($('.news-img-two')).removeClass('housing-news-title-bottom-li-img-radius');
+		off = true
+	}
 })

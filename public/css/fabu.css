@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Microsoft YaHei;
+}
+.fabu-homepage {
+  display: none;
+  width: 100%;
+  background: #1d1c1b;
+}
+.fabu-homepage .fabu-homepage-center {
+  width: 100%;
+  height: 135px;
+  color: #fff;
+  position: absolute;
+  bottom: 15%;
+  display: flex;
+  text-align: center;
+}
+.fabu-homepage .fabu-homepage-center .fabu-homepage-center-left {
+  flex: 1;
+}
+.fabu-homepage .fabu-homepage-center .fabu-homepage-center-left .fabu-homepage-left-img {
+  width: 94px;
+  height: 94px;
+  display: inline-block;
+  background: url("../img/house/i/publish_btn02@2x.png") center no-repeat;
+  background-size: 100%;
+  margin-bottom: 5px;
+}
+.fabu-homepage .fabu-homepage-center .fabu-homepage-center-right {
+  flex: 1;
+}
+.fabu-homepage .fabu-homepage-center .fabu-homepage-center-right .fabu-homepage-right-img {
+  width: 94px;
+  height: 94px;
+  display: inline-block;
+  background: url("../img/house/i/publish_btn01@2x.png") center no-repeat;
+  background-size: 100%;
+  margin-bottom: 5px;
+}
+.fabu-homepage .fabu-homepage-bottom {
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-bottom: 4px;
+  position: absolute;
+  bottom: 0;
+  background: #242221;
+  line-height: 50px;
+  text-align: center;
+}
+.fabu-homepage .fabu-homepage-bottom .fabu-homepage-bottom-img {
+  width: 14px;
+  height: 14px;
+  background: url("../img/house/i/publish_close_icon@2x.png") center no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+.fabu-needs {
+  background: #efeff4;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+.fabu-needs .needs-top {
+  height: 45px;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 45px;
+  overflow: hidden;
+}
+.fabu-needs .needs-top .needs-top-left {
+  font-weight: 300;
+  font-size: 14px;
+  float: left;
+  margin-left: 10px;
+}
+.fabu-needs .needs-top .needs-top-right {
+  font-weight: 300;
+  font-size: 14px;
+  float: right;
+  margin-right: 10px;
+  color: #ed7139;
+}
+.fabu-needs .needs-absolute {
+  position: absolute;
+  background: rgba(180,180,180,0.6);
+  width: 100%;
+  top: 0;
+  display: none;
+  height: 100%;
+  z-index: 10;
+}
+.fabu-needs .needs-absolute .absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -132px;
+  margin-top: -55px;
+  border-radius: 10px;
+  width: 275px;
+  height: 110px;
+  background: #fff;
+  text-align: center;
+}
+.fabu-needs .needs-absolute .absolute-center .absolute-center-top {
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  border-bottom: 1px solid #ebebee;
+}
+.fabu-needs .needs-absolute .absolute-center .absolute-center-bottom {
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+.fabu-needs .needs-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-left {
+  border-radius: 0px 0px 0px 10px;
+  flex: 1;
+  border-right: 1px solid #ebebee;
+  color: #7e7e7e;
+}
+.fabu-needs .needs-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-right {
+  border-radius: 0px 0px 10px 0px;
+  flex: 1;
+  color: #ea5404;
+}
+.fabu-needs .fabu-absolute {
+  position: absolute;
+  background: #b2b2b2;
+  width: 100%;
+  top: 0;
+  display: none;
+  height: 100%;
+  z-index: 10;
+}
+.fabu-needs .fabu-absolute .absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -132px;
+  margin-top: -55px;
+  border-radius: 10px;
+  width: 275px;
+  height: 110px;
+  background: #fff;
+  text-align: center;
+}
+.fabu-needs .fabu-absolute .absolute-center .absolute-center-top {
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  border-bottom: 1px solid #ebebee;
+}
+.fabu-needs .fabu-absolute .absolute-center .absolute-center-bottom {
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+.fabu-needs .fabu-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-left {
+  border-radius: 0px 0px 0px 10px;
+  flex: 1;
+  border-right: 1px solid #ebebee;
+  color: #7e7e7e;
+}
+.fabu-needs .fabu-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-right {
+  border-radius: 0px 0px 10px 0px;
+  flex: 1;
+  color: #ea5404;
+}
+.fabu-needs .fabu-absolute .absolute-center .absolute-center-bottom .setTime-ok {
+  border-radius: 0px 0px 10px 10px;
+  flex: 1;
+  color: #ea5404;
+}
+.needs-contain {
+  margin: 10px 25px;
+}
+.needs-contain .needs-contain-name input {
+  font-size: 18px;
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.needs-contain .needs-contain-number {
+  margin-top: 10px;
+}
+.needs-contain .needs-contain-number input {
+  font-size: 18px;
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.needs-contain .needs-contain-brief {
+  margin-top: 10px;
+}
+.needs-contain .needs-contain-brief textarea {
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  outline-color: #f4aa83;
+  outline-width: 1px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+.fabu-housing {
+  height: 100%;
+  width: 100%;
+  background: #efeff4;
+}
+.fabu-housing .housing-top {
+  height: 45px;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
+}
+.fabu-housing .housing-top .housing-top-left {
+  position: absolute;
+  font-weight: 500;
+  font-size: 16px;
+  left: 10px;
+}
+.fabu-housing .housing-add {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+}
+.fabu-housing .housing-add .housing-add-left {
+  flex: 1;
+  border-radius: 5px;
+  background: #fff;
+  height: 30px;
+  line-height: 25px;
+}
+.fabu-housing .housing-add .housing-add-left .housing-add-left-img {
+  width: 13px;
+  height: 13px;
+  margin-left: 10px;
+  display: inline-block;
+  background: url("../img/house/i/content_search_icon@2x.png") center no-repeat;
+  background-size: 100%;
+  vertical-align: text-bottom;
+}
+.fabu-housing .housing-add .housing-add-left .housing-add-left-txt {
+  display: inline-block;
+}
+.fabu-housing .housing-add .housing-add-left .housing-add-left-txt input {
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+.fabu-housing .housing-add .housing-add-right {
+  line-height: 25px;
+}
+.fabu-housing .housing-add .housing-add-right .housing-add-right-img {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: url("../img/house/i/content_plus_icon@2x.png") center no-repeat;
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+.fabu-housing .housing-add .housing-add-right .housing-add-right-txt {
+  color: #525253;
+  font-size: 12px;
+}
+.fabu-housing .housing-contain .housing-contain-top {
+  background: #fff;
+  height: 260px;
+  padding: 10px;
+}
+.fabu-housing .housing-contain .housing-contain-top .housing-contain-title {
+  font-size: 14px;
+}
+.fabu-housing .housing-contain .housing-contain-top .housing-contain-title .housing-contain-title-img {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c0ea4f;
+  display: inline-block;
+}
+.fabu-housing .housing-contain .housing-contain-top .housing-contain-content {
+  list-style: none;
+  font-size: 12px;
+  padding-left: 25px;
+}
+.fabu-housing .housing-contain .housing-contain-top .housing-contain-content .housing-contain-content-li {
+  padding-top: 5px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 5px;
+}
+.fabu-housing .housing-contain .housing-contain-top .housing-contain-content .housing-contain-content-li .housing-contain-content-left {
+  color: #838383;
+}
+.fabu-housing .housing-contain .housing-contain-top .housing-contain-content .housing-contain-content-li .housing-contain-content-right {
+  display: inline-block;
+  flex: 1;
+  border-bottom: 1px solid #ededef;
+}
+.fabu-housing .housing-contain .housing-contain-top .housing-contain-content .housing-contain-content-li .housing-contain-content-right input {
+  border: none;
+  outline: none;
+}
+.fabu-housing .housing-contain-news {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-title {
+  font-size: 14px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-title .housing-contain-news-title-img {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #4acde9;
+  display: inline-block;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-title .housing-news-title-bottom {
+  padding-left: 25px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  color: #898989;
+  font-size: 12px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-title .housing-news-title-bottom .housing-news-title-bottom-ul {
+  list-style: none;
+  color: #909090;
+  margin-left: 25px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-title .housing-news-title-bottom .housing-news-title-bottom-ul .housing-news-title-bottom-li {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-title .housing-news-title-bottom .housing-news-title-bottom-ul .housing-news-title-bottom-li .housing-news-title-bottom-li-img {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: url("../img/house/i/content_nor_icon@2x.png") center no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-title .housing-news-title-bottom .housing-news-title-bottom-ul .housing-news-title-bottom-li .housing-news-title-bottom-li-img .housing-news-title-bottom-li-img-radius {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 50%;
+  margin-left: -2px;
+  background: url("../img/house/i/content_press_icon@2x.png") center no-repeat;
+  background-size: 100%;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent {
+  font-size: 12px;
+  color: #c4c4c4;
+  margin-top: 10px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li {
+  display: flex;
+  margin-top: 10px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-left {
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right {
+  flex: 1;
+  display: flex;
+  margin-right: 5px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-left {
+  flex: 1;
+  border: none;
+  position: relative;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-left input {
+  border: none;
+  outline: none;
+  background: #efeff4;
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-left .housing-news-input {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 2%;
+  background: url("../img/house/i/content_list_right_icon@2x.png") center no-repeat;
+  background-size: 100%;
+  transform: rotate(90deg);
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-right {
+  flex: 1;
+  padding-left: 15px;
+  line-height: 30px;
+  color: #484848;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-right .housing-news-title-bottom-li-img {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: url("../img/house/i/content_nor_icon@2x.png") center no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-right .housing-news-title-bottom-li-img .housing-news-title-bottom-li-img-radius {
+  width: 4px;
+  height: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 50%;
+  margin-left: -2px;
+  background: url("../img/house/i/content_press_icon@2x.png") center no-repeat;
+  background-size: 100%;
+}

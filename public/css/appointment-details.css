@@ -81,6 +81,50 @@
   line-height: 45px;
   margin-top: 45px;
 }
+.body-absolute {
+  position: absolute;
+  background: #b2b2b2;
+  width: 100%;
+  display: none;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+}
+.body-absolute .absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -132px;
+  margin-top: -55px;
+  border-radius: 10px;
+  width: 275px;
+  height: 110px;
+  background: #fff;
+  text-align: center;
+}
+.body-absolute .absolute-center .absolute-center-top {
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  border-bottom: 1px solid #ebebee;
+}
+.body-absolute .absolute-center .absolute-center-bottom {
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+.body-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-left {
+  border-radius: 0px 0px 0px 10px;
+  flex: 1;
+  border-right: 1px solid #ebebee;
+  color: #7e7e7e;
+}
+.body-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-right {
+  border-radius: 0px 0px 10px 0px;
+  flex: 1;
+  color: #ea5404;
+}
 .absolute {
   position: absolute;
   background: rgba(180,180,180,0.6);

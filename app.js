@@ -5,7 +5,7 @@ var viewsPath=path.join(__dirname,'views');
 app.use('/',express.static(viewsPath));
 var publicPath=path.join(__dirname,'public');
 app.use('/public',express.static(publicPath));
-app.listen(9647,function(){
+app.listen(16916,function(){
 	console.log('server run at port 9576');
 })
 
