@@ -4,7 +4,6 @@
 body
 	font-family Microsoft YaHei
 .fabu-homepage
-	display none
 	width 100%
 	background #1D1C1B
 	.fabu-homepage-center
@@ -153,6 +152,85 @@ body
 					border-radius 0px 0px 10px 10px
 					flex 1
 					color #EA5404
+.fabu-no-absolute
+		position absolute
+		background rgba(180,180,180,0.6)
+		width 100%
+		top 0
+		display none
+		height 100%
+		z-index 10
+		.absolute-center
+			position absolute
+			top 50%
+			left 50%
+			margin-left -132px
+			margin-top -55px
+			border-radius 10px
+			width 275px
+			height 110px
+			background white
+			text-align center
+			.absolute-center-top
+				height 65px
+				line-height 65px
+				font-size 14px
+				border-bottom 1px solid #EBEBEE
+			.absolute-center-bottom
+				border-radius 0px 0px 10px 10px
+				display flex
+				height 45px
+				line-height 45px
+				.absolute-center-bottom-left
+					border-radius 0px 0px 0px 10px
+					flex 1
+					border-right 1px solid #EBEBEE
+					color #7E7E7E
+				.absolute-center-bottom-right
+					border-radius 0px 0px 10px 0px
+					flex 1
+					color #EA5404
+.fabu-house-absolute
+		position absolute
+		background rgba(180,180,180,0.6)
+		width 100%
+		display none
+		height 100%
+		z-index 10
+		.absolute-center
+			position absolute
+			top 50%
+			left 50%
+			margin-left -132px
+			margin-top -55px
+			border-radius 10px
+			width 275px
+			height 110px
+			background white
+			text-align center
+			.absolute-center-top
+				height 65px
+				line-height 65px
+				font-size 14px
+				border-bottom 1px solid #EBEBEE
+			.absolute-center-bottom
+				border-radius 0px 0px 10px 10px
+				display flex
+				height 45px
+				line-height 45px
+				.absolute-center-bottom-left
+					border-radius 0px 0px 0px 10px
+					flex 1
+					border-right 1px solid #EBEBEE
+					color #7E7E7E
+				.absolute-center-bottom-right
+					border-radius 0px 0px 10px 0px
+					flex 1
+					color #EA5404
+				.setTime-ok
+					border-radius 0px 0px 10px 10px
+					flex 1
+					color #EA5404
 .needs-contain
 	margin 10px 25px
 	.needs-contain-name
@@ -189,6 +267,7 @@ body
 .fabu-housing
 	height 100%
 	width 100%
+	display none
 	background #EFEFF4
 	.housing-top
 		height 45px
@@ -214,6 +293,7 @@ body
 			background white
 			height 30px
 			line-height 25px
+			position relative
 			.housing-add-left-img
 				width 13px
 				height 13px
@@ -228,6 +308,17 @@ body
 					border none
 					outline none
 					font-size 12px
+				.housing-add-position-img
+					display inline-block
+					width 13px
+					height 13px
+					background url(../img/house/i/content_delet_icon@2x.png) center no-repeat
+					background-size 100%
+					position absolute
+					top 50%
+					margin-top -6px
+					right 2%
+					display none
 		.housing-add-right
 			line-height 25px
 			.housing-add-right-img
@@ -335,6 +426,14 @@ body
 						flex 1
 						border none
 						position relative
+						textarea
+							resize none
+							border none
+							outline none
+							padding 5px 0px 5px 5px
+							width 100%
+							background #EFEFF4
+							border-radius 5px
 						input
 							border none
 							outline none
@@ -359,6 +458,14 @@ body
 						padding-left 15px
 						line-height 30px
 						color #484848
+						input
+							border none
+							outline none
+							background #EFEFF4
+							width 100%
+							height 30px
+							padding-left 5px
+							border-radius 5px
 						.housing-news-title-bottom-li-img
 							width 8px
 							height 8px
@@ -377,3 +484,42 @@ body
 								margin-left -2px
 								background url(../img/house/i/content_press_icon@2x.png) center no-repeat
 								background-size 100%
+			.housing-news-add
+				width 75px
+				height 75px
+				background #D4D4D9
+				text-align center
+				position relative
+				color #989898
+				.housing-news-add-sp
+					position absolute
+					top 50%
+					margin-top -18px
+					.housing-news-add-img
+						width 24px
+						height 24px
+						display inline-block
+						background url(../img/house/i/content_plus_icon@2x.png) center no-repeat
+						background-size 100%
+						.housing-news-add-input
+							border none
+							opacity 0
+					.housing-news-add-bottom
+						display inline-block
+	.housing-contain-end
+		height 60px
+		background white
+		margin-top 10px
+		text-align center
+		.housing-contain-end-btn
+			display inline-block
+			width 95%
+			margin auto
+			background #EA5404
+			color #FDF2EF
+			height 40px
+			line-height 40px
+			font-size 16px
+			border none
+			border-radius 5px
+			margin-top 10px

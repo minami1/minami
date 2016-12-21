@@ -284,7 +284,7 @@ $('.details-end-ok').on('touchend',function(){
 var bodyheight = $(window).height()
 $('.fabu-homepage').css('height',bodyheight);
 $('.fabu-needs').css('height',bodyheight);
-$('.fabu-housing').css('height',bodyheight);
+// $('.fabu-housing').css('height',bodyheight);
 
 $('.needs-top-left').on('touchend',function(){
 	$('.needs-absolute').fadeIn(400);
@@ -325,4 +325,36 @@ $('.housing-news-centent-li-right').on('touchend',function(){
 		$(this).find($('.news-img-two')).removeClass('housing-news-title-bottom-li-img-radius');
 		off = true
 	}
+})
+$('.housing-contain-end-btn').on('touchend',function(){
+	$('.fabu-house-absolute').css({
+		'top':$(document).scrollTop(),
+		// 'height':$(document).height()
+	})
+	$('.fabu-house-absolute').fadeIn(400);
+	$('.absolute-center-bottom-right').css('background','white');
+})
+function oimg(e){
+	if(e.value!=''){
+		$('.housing-add-position-img').css('display','block')
+	}else{
+		$('.housing-add-position-img').css('display','none')
+	}
+}
+$('.housing-top-left').on('touchend',function(){
+	$('.fabu-no-absolute').fadeIn(400);
+	$('.absolute-center-bottom-right').css('background','white');
+	$('.absolute-center-bottom-left').css({'background':'white','color':'black'});
+})
+$('.fabu-homepage-center-right').on('touchend',function(){
+	$('.fabu-homepage').fadeOut(300);
+	$('.fabu-housing').fadeIn(400)
+})
+$('.fabu-no-absolute .absolute-center-bottom-right').on('touchend',function(){
+	$('.fabu-homepage').fadeIn(400)
+	$('.fabu-housing').fadeOut(300)
+})
+$('.fabu-house-absolute .setTime-ok').on('touchend',function(){
+	$('.fabu-homepage').fadeIn(400)
+	$('.fabu-housing').fadeOut(300)
 })

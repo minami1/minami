@@ -6,7 +6,6 @@ body {
   font-family: Microsoft YaHei;
 }
 .fabu-homepage {
-  display: none;
   width: 100%;
   background: #1d1c1b;
 }
@@ -180,6 +179,98 @@ body {
   flex: 1;
   color: #ea5404;
 }
+.fabu-no-absolute {
+  position: absolute;
+  background: rgba(180,180,180,0.6);
+  width: 100%;
+  top: 0;
+  display: none;
+  height: 100%;
+  z-index: 10;
+}
+.fabu-no-absolute .absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -132px;
+  margin-top: -55px;
+  border-radius: 10px;
+  width: 275px;
+  height: 110px;
+  background: #fff;
+  text-align: center;
+}
+.fabu-no-absolute .absolute-center .absolute-center-top {
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  border-bottom: 1px solid #ebebee;
+}
+.fabu-no-absolute .absolute-center .absolute-center-bottom {
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+.fabu-no-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-left {
+  border-radius: 0px 0px 0px 10px;
+  flex: 1;
+  border-right: 1px solid #ebebee;
+  color: #7e7e7e;
+}
+.fabu-no-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-right {
+  border-radius: 0px 0px 10px 0px;
+  flex: 1;
+  color: #ea5404;
+}
+.fabu-house-absolute {
+  position: absolute;
+  background: rgba(180,180,180,0.6);
+  width: 100%;
+  display: none;
+  height: 100%;
+  z-index: 10;
+}
+.fabu-house-absolute .absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -132px;
+  margin-top: -55px;
+  border-radius: 10px;
+  width: 275px;
+  height: 110px;
+  background: #fff;
+  text-align: center;
+}
+.fabu-house-absolute .absolute-center .absolute-center-top {
+  height: 65px;
+  line-height: 65px;
+  font-size: 14px;
+  border-bottom: 1px solid #ebebee;
+}
+.fabu-house-absolute .absolute-center .absolute-center-bottom {
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+.fabu-house-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-left {
+  border-radius: 0px 0px 0px 10px;
+  flex: 1;
+  border-right: 1px solid #ebebee;
+  color: #7e7e7e;
+}
+.fabu-house-absolute .absolute-center .absolute-center-bottom .absolute-center-bottom-right {
+  border-radius: 0px 0px 10px 0px;
+  flex: 1;
+  color: #ea5404;
+}
+.fabu-house-absolute .absolute-center .absolute-center-bottom .setTime-ok {
+  border-radius: 0px 0px 10px 10px;
+  flex: 1;
+  color: #ea5404;
+}
 .needs-contain {
   margin: 10px 25px;
 }
@@ -221,6 +312,7 @@ body {
 .fabu-housing {
   height: 100%;
   width: 100%;
+  display: none;
   background: #efeff4;
 }
 .fabu-housing .housing-top {
@@ -250,6 +342,7 @@ body {
   background: #fff;
   height: 30px;
   line-height: 25px;
+  position: relative;
 }
 .fabu-housing .housing-add .housing-add-left .housing-add-left-img {
   width: 13px;
@@ -267,6 +360,18 @@ body {
   border: none;
   outline: none;
   font-size: 12px;
+}
+.fabu-housing .housing-add .housing-add-left .housing-add-left-txt .housing-add-position-img {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url("../img/house/i/content_delet_icon@2x.png") center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: 2%;
+  display: none;
 }
 .fabu-housing .housing-add .housing-add-right {
   line-height: 25px;
@@ -398,6 +503,15 @@ body {
   border: none;
   position: relative;
 }
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-left textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 5px 0px 5px 5px;
+  width: 100%;
+  background: #efeff4;
+  border-radius: 5px;
+}
 .fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-left input {
   border: none;
   outline: none;
@@ -425,6 +539,15 @@ body {
   line-height: 30px;
   color: #484848;
 }
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-right input {
+  border: none;
+  outline: none;
+  background: #efeff4;
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
 .fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-centent-li .housing-news-centent-li-right .housing-news-right-right .housing-news-title-bottom-li-img {
   width: 8px;
   height: 8px;
@@ -444,4 +567,50 @@ body {
   margin-left: -2px;
   background: url("../img/house/i/content_press_icon@2x.png") center no-repeat;
   background-size: 100%;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-add {
+  width: 75px;
+  height: 75px;
+  background: #d4d4d9;
+  text-align: center;
+  position: relative;
+  color: #989898;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-add .housing-news-add-sp {
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-add .housing-news-add-sp .housing-news-add-img {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url("../img/house/i/content_plus_icon@2x.png") center no-repeat;
+  background-size: 100%;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-add .housing-news-add-sp .housing-news-add-img .housing-news-add-input {
+  border: none;
+  opacity: 0;
+}
+.fabu-housing .housing-contain-news .housing-contain-news-centent .housing-news-add .housing-news-add-sp .housing-news-add-bottom {
+  display: inline-block;
+}
+.fabu-housing .housing-contain-end {
+  height: 60px;
+  background: #fff;
+  margin-top: 10px;
+  text-align: center;
+}
+.fabu-housing .housing-contain-end .housing-contain-end-btn {
+  display: inline-block;
+  width: 95%;
+  margin: auto;
+  background: #ea5404;
+  color: #fdf2ef;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
 }

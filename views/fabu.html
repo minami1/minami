@@ -70,12 +70,31 @@
 			<div class="housing-add-left">
 				<span class="housing-add-left-img"></span>
 				<span class="housing-add-left-txt">
-					<input type="text" placeholder="搜索想要发布的大厦">
+						<input type="text" placeholder="搜索想要发布的大厦" onkeyup="oimg(this)">
+						<span class="housing-add-position-img"></span>
 				</span>
 			</div>
 			<div class="housing-add-right">
 				<span class="housing-add-right-img"></span>
 				<span class="housing-add-right-txt">新增楼盘</span>
+			</div>
+			
+		</div>
+		<div class="fabu-house-absolute">
+			<div class="absolute-center">
+				<div class="absolute-center-top">房源发布成功，请稍后</div>
+				<div class="absolute-center-bottom">
+					<span class="absolute-center-bottom-right setTime-ok">确定</span>
+				</div>
+			</div>
+		</div>
+		<div class="fabu-no-absolute">
+			<div class="absolute-center">
+				<div class="absolute-center-top">您确定要退出本次发布吗？</div>
+				<div class="absolute-center-bottom">
+					<span class="absolute-center-bottom-left">取消</span>
+					<span class="absolute-center-bottom-right">确定</span>
+				</div>
 			</div>
 		</div>
 		<div class="housing-contain">
@@ -318,7 +337,7 @@
 						</li>
 						<li class="housing-news-centent-li">
 							<span class="housing-news-centent-li-left">
-								装修租免
+								装修免租
 							</span>
 							<span class="housing-news-centent-li-right">
 								<span class="housing-news-right-left">
@@ -326,8 +345,43 @@
 								</span>
 							</span>
 						</li>
+						<li class="housing-news-centent-li">
+							<span class="housing-news-centent-li-left">
+								看房时间
+							</span>
+							<span class="housing-news-centent-li-right">
+								<span class="housing-news-right-left">
+									<input placeholder="8:00">
+								</span>
+								<span class="housing-news-right-right">
+									<input type="text" placeholder="20:00">
+								</span>
+							</span>
+						</li>
+						<li class="housing-news-centent-li">
+							<span class="housing-news-centent-li-left">
+								房源简介
+							</span>
+							<span class="housing-news-centent-li-right">
+								<span class="housing-news-right-left">
+									<textarea placeholder="房源简介" rows="6"></textarea>
+								</span>
+							</span>
+						</li>
 					</ul>
+					<div class="housing-news-add">
+						<div class="housing-news-add-sp">
+							<div class="housing-news-add-img">
+								<input class="housing-news-add-input" type="file">
+							</div>
+							<div class="housing-news-add-bottom">添加图片</div>
+						</div>
+						
+					</div>
 				</div>
+			</div>
+			<div class="housing-contain-end">
+				<button class="housing-contain-end-btn">确认发布</button>
 			</div>
 		</div>
 	</div>
