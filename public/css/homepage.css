@@ -12,16 +12,34 @@ body {
   overflow: hidden;
 }
 .homepage-cantain .homepage-content-ul {
-  width: 200%;
+  width: 400%;
   position: absolute;
+  left: 0;
   z-index: 1;
   height: 100%;
   top: 0;
 }
 .homepage-cantain .homepage-content-ul .homepage-content-li-img {
+  list-style: none;
   background: url("../img/house/i/banner_img@2y.png") no-repeat center;
   height: 100%;
   background-size: 100%;
+  float: left;
+}
+.homepage-cantain .homepage-content-ul .homepage-content-li-img-three {
+  list-style: none;
+  width: 320px;
+  background: url("../img/house/i/light.jpg") no-repeat center;
+  height: 100%;
+  background-size: 100% 110%;
+  float: left;
+}
+.homepage-cantain .homepage-content-ul .homepage-content-li-img-two {
+  list-style: none;
+  background: url("../img/house/i/banner_img@2x.png") no-repeat center;
+  height: 100%;
+  background-size: 100%;
+  float: left;
 }
 .homepage-cantain .homepage-content-ul .homepage-cantain-content-img {
   width: 100%;
@@ -78,10 +96,16 @@ body {
   color: #b9b9b9;
   font-size: 14px;
 }
+.homepage-fixed {
+  position: fixed;
+}
 .homepage-cantain-two {
   overflow: hidden;
   background: #3c3c3b;
   height: 0px;
+  z-index: 6;
+  top: 0;
+  width: 100%;
 }
 .homepage-cantain-two .homepage-cantain-top {
   display: flex;
@@ -135,6 +159,8 @@ body {
   border-bottom: 1px solid #ebebee;
   margin-top: 10px;
   background: #fff;
+  top: 40px;
+  z-index: 6;
 }
 .homepage-last .homepage-last-top {
   height: 45px;
@@ -168,6 +194,10 @@ body {
   position: absolute;
   left: 50%;
   margin-left: -4px;
+}
+.homepage-last .homepage-last-top .homepage-last-top-ul .homepage-last-top-cantain .homepage-background {
+  background: url("../img/house/i/content_icon02_press@2x.png") center no-repeat;
+  background-size: 100% 100%;
 }
 .homepage-last .homepage-last-top .homepage-last-top-ul .homepage-last-top-cantain .homepage-last-top-end-img {
   width: 35px;
@@ -275,6 +305,17 @@ body {
 }
 .homepage-absolute {
   display: none;
+  z-index: 5;
   position: absolute;
   background: rgba(60,60,60,0.4);
+}
+.homepage-back-top {
+  width: 47px;
+  height: 47px;
+  position: fixed;
+  bottom: 70px;
+  right: 3%;
+  background: url("../img/house/i/content_btn_back@2x.png") center no-repeat;
+  background-size: 100%;
+  display: none;
 }

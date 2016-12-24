@@ -1,1 +1,1 @@
-)__ESCAPED_SOURCE_END_CLEAN_CSS__
+var _setInterval = setInterval(setmove,2000)__ESCAPED_SOURCE_END_CLEAN_CSS__

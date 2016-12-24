@@ -148,6 +148,7 @@ var paehomeheight = $(window).height()*0.6;
 var pagehomeheight = paehomewidth*0.85;
 var pagehome_top_height = $('.homepage-top-title').height()
 $('.homepage-content-li-img').width(paehomewidth);
+$('.homepage-content-li-img-two').width(paehomewidth);
 $('.homepage-cantain').height(pagehomeheight);
 $('.homepage-top-seach').css('top',pagehome_top_height+5+'px')
 $('.homepage-last').width(paehomewidth)
@@ -162,46 +163,54 @@ var homepage_cantain_height = $('.homepage-cantain').height()
 $('.homepage-last-top-hidden').css('top',homepage_hidden_top-4);
 var num = 0
 $(".homepage-last-top-cantain").on('touchend',function(){
-
+	var _this = $(this).find($('.homepage-last-top-img'))
+	var _notThis = $(this).siblings().find($('.homepage-last-top-img'));
 	if($(".homepage-last-top-cantain").index($(this))==$(".homepage-last-top-cantain").length-1){
 		
 		if(num==0){
 			$(this).children().removeClass();
 			$(this).children().addClass('homepage-last-top-end-img-two');
 			num ++
-			console.log(1)
 		}else if(num==1){
 			$(this).children().removeClass();
 			$(this).children().addClass('homepage-last-top-end-img-three');
 			num++
-			console.log(2)
 		}else{
 			$(this).children().removeClass();
-			$(this).children().addClass('homepage-last-top-cantain');
+			$(this).children().addClass('homepage-last-top-end-img');
 			num=0
-			console.log(3)
 		}
 	}else{
+			$(_notThis).removeClass('homepage-background');
+			$(_this).addClass('homepage-background');
 		if($('.homepage-cantain').css('display')=='block'){
 			$('.homepage-cantain').slideUp(700);
 			$('.homepage-absolute').css('top',$('.homepage-last-top-hidden').height());
 			// $('.homepage-cantain-two').fadeIn(800);
 			$('.homepage-cantain-two').animate({
 				'height':'50px'
-			},800);
+			},700);
+			$('.homepage-cantain-two').addClass('homepage-fixed')
+			$('.homepage-last').addClass('homepage-fixed')
 			$('.homepage-absolute').fadeIn(1000)
-			$('.homepage-last').css('margin-top','0px');
-			$('.homepage-last-top-hidden').fadeIn(1000);
+			// $('.homepage-last').css('margin-top','0px');
+			$('.homepage-last-top-hidden').slideDown(700);
 			setTimeout(settime,1000)
 		}else{
+			if($(window).scrollTop()<=paehomeheight){
+				$('.homepage-cantain-two').removeClass('homepage-fixed')
+				$('.homepage-last').removeClass('homepage-fixed')
+				$('.homepage-cantain-two').animate({
+					'height':'0px'
+				},700)
+			}
+			$(_this).removeClass('homepage-background');
 			$('.homepage-cantain').slideDown(700);
 			// $('.homepage-cantain-two').fadeOut(1000);
 			$('.homepage-last').css('margin-top','10px');
-			$('.homepage-cantain-two').animate({
-				'height':'0px'
-			},800)
+			
 			$('.homepage-absolute').fadeOut(1000)
-			$('.homepage-last-top-hidden').fadeOut(800);
+			$('.homepage-last-top-hidden').slideUp(700);
 		}
 	}
 	
@@ -358,3 +367,50 @@ $('.fabu-house-absolute .setTime-ok').on('touchend',function(){
 	$('.fabu-homepage').fadeIn(400)
 	$('.fabu-housing').fadeOut(300)
 })
+$('.homepage-back-top').on('touchend',function(){
+	$('body').animate({
+		scrollTop:0
+	},300)
+	setTimeout(function(){
+		$('.homepage-back-top').css('display','none')
+	},300)
+})
+$(window).on('touchmove',function(){
+	if($(document).scrollTop()>=10){
+		$('.homepage-back-top').css('display','block')
+	}else{
+		$('.homepage-back-top').css('display','none')
+	}
+	if($(document).scrollTop()>=pagehomeheight){
+		$('.homepage-cantain-two').animate({
+				'height':'50px',
+			},100)
+		$('.homepage-cantain-two').addClass('homepage-fixed')
+		$('.homepage-last').addClass('homepage-fixed')
+	}else{
+		$('.homepage-cantain-two').animate({
+				'height':'0px',
+			},200)
+		$('.homepage-cantain-two').removeClass('homepage-fixed')
+		$('.homepage-last').removeClass('homepage-fixed')
+	}
+})
+var homepageliwidth = -$('.homepage-content-li-img').width()
+var _box = document.getElementsByClassName('homepage-content-ul')[0]
+_box.addEventListener('touchstart',function(){
+	clearInterval(_setInterval);
+})
+
+_box.addEventListener('touchend',function(e){
+	_setInterval = setInterval(setmove,2000);
+})
+function setmove(){
+	$('.homepage-content-ul').animate({
+		'left':homepageliwidth
+	},700)
+	setTimeout(function(){
+		$('.homepage-content-ul').css('left',0)
+		$('.homepage-content-ul').find('li').eq(0).appendTo($('.homepage-content-ul'))
+	},900)
+}
+var _setInterval = setInterval(setmove,2000)
